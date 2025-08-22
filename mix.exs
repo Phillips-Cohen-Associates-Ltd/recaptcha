@@ -46,11 +46,11 @@ defmodule Recaptcha.Mixfile do
 
   defp deps do
     [
-      {:httpoison, ">= 0.12.0"},
-      {:jason, "~> 1.2", optional: true},
-      {:credo, "~> 1.0", only: [:dev, :test], runtime: false},
-      {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
-      {:dialyxir, "~> 0.5", only: [:dev]},
+      {:httpoison, "~> 2.2"},
+      {:jason, "~> 1.4", optional: true},
+      {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
+      {:ex_doc, ">= 0.38.0", only: :dev, runtime: false},
+      {:dialyxir, "~> 1.4", only: [:dev]},
       {:excoveralls, "~> 0.7.1", only: :test}
     ]
   end
